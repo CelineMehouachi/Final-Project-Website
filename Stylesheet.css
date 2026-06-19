@@ -165,6 +165,26 @@ p { color: var(--ink-soft); }
   box-shadow: 0 18px 40px rgba(46, 42, 37, 0.18);
 }
 
+/* Constrain and center content images to avoid them filling full layout */
+.image-container,
+.placeholder-image,
+.video-placeholder,
+.info-image {
+  text-align: center;
+}
+
+.image-container img,
+.placeholder-image img,
+.video-placeholder img,
+.info-image img,
+.hero-image img {
+  max-width: 520px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
 .section {
   padding: 4rem 0;
 }
